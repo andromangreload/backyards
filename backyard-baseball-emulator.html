@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Backyard Baseball Emulator
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Backyard Baseball Emulator",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/e2/93/40/e29340522a667973feee6c7b8de93a52.png&quot;,&quot;https://i.pinimg.com/originals/cb/3d/b2/cb3db2bf8ecb7fcb1f36a6af44216a9c.png&quot;,&quot;https://i.pinimg.com/600x315/6a/73/60/6a7360e6d60606db5fa2ab824c3f5bd0.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyards Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=backyard baseball emulator",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Backyard Baseball Emulator
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Backyard Baseball Emulator</strong>. It s the first of a long series of successful titles the last one of which was released in 2015. Backyard baseball rom download for gameboy advance.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/600x315/52/c7/62/52c76220d2473338d11ac40340e06cb9.jpg" alt="Dolphin Emulator Mario Kart Wii I7 4770k Gtx 960 Mario Kart Mario Kart Wii Dolphin Emulator" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fYjUnbMTl0DkEKtCIyo9nNMKMAAsvZdZTjz7RnBpWWwFvuppg3AwPlw6Al4eaK10xH_6r7mSb_JRWwNdbCECTy-9Yqsy28I&amp;ec=45732303';">
+        <figcaption>Dolphin Emulator Mario Kart Wii I7 4770k Gtx 960 Mario Kart Mario Kart Wii Dolphin Emulator from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Backyard baseball game for gameboy advance works on computers and mobile devices with an emulator. All games are available without downloading only at playemulator. Published in 2002 by infogrames inc backyard baseball 2003 is still a popular baseball title amongst retrogamers with a whopping 4 2 5 rating.
+    </p>
+    <h3>Baseball and baseball stars 2.</h3>
+    <p>Tagged as backyard games baseball games gba games and sports games. It s the first of a long series of successful titles the last one of which was released in 2015. Even though it is what could be referred to as retro this is still a fun time if you like old school arcade baseball games. This is one of the most charming arcade style baseball games you will ever play.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Baseball Emulator For Mac 2020 Di 2020" src="https://i.pinimg.com/736x/93/94/d0/9394d07b0ccc7ff1f55b25a55b98cac8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymM1LHtRZeYxQOs8AU4CZm5eNMzbFIpRwE4kuwI6AQ90_jhREGw6B183a9NNke28iXkqnAhWN0dnIsWCgj9W2MSQhiFi4XAs&amp;ec=45732303';" />
+        <small>Source: id.pinterest.com</small>
+        <p>Backyard baseball is a baseball game created by humongous entertainment and released for windows and macintosh in 1997.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Baseball 2003 1clk Windows 10 8 7 Vista Xp Install In 2020 Backyard Baseball Backyard Backyard Sports" src="https://i.pinimg.com/originals/eb/a7/cf/eba7cfaf361be81ac28f9eadde2e8f40.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbYIwKdbZso5nXYQ-3KnaP__grqPG_2i24CARAJ4e_A_MDnmg5lmZwUeRMpPce15jpHM7GAU2SdFxR6s9ZA2etI4FDUAaJPUg&amp;ec=45732303';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Backyard baseball is a baseball game created by humongous entertainment and released for windows and macintosh in 1997.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dolphin Emulator Mario Kart Wii I7 4770k Gtx 960 Mario Kart Mario Kart Wii Dolphin Emulator" src="https://i.pinimg.com/600x315/52/c7/62/52c76220d2473338d11ac40340e06cb9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fYjUnbMTl0DkEKtCIyo9nNMKMAAsvZdZTjz7RnBpWWwFvuppg3AwPlw6Al4eaK10xH_6r7mSb_JRWwNdbCECTy-9Yqsy28I&amp;ec=45732303';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Other games you might like are backyard baseball 2006 and super ultra baseball 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Baseball Jogo De Beisebol Jogos Ps2 Jogos De Beisebol Beisebol Jogos Ps2" src="https://i.pinimg.com/originals/42/70/ff/4270ff02e325248915b7c0c6ca0409b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxG4OSQftjZ7zdsGYzygJ6IKpJQGtvyt8-hrLNkdKcgHW_VEVkv-wQplY1OQpOx9s_PnC2YD_gPkk3VD45Ar5zCwEF65GOxN8&amp;ec=45732303';" />
+        <small>Source: br.pinterest.com</small>
+        <p>All games are available without downloading only at playemulator.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Baseball 2005 Download Dengan Gambar" src="https://i.pinimg.com/originals/84/0a/b7/840ab7cfdc2c3f0572f9f5658ed02eb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmEWR0XyqJ2HDRt3rDzhCXVonVVZA48Tf0T3Czqg2ymopHkpv9uN1K6z65xUBUVFq1Z275Dg4aPWYb1FQy_B8Q4hGi4_zWBiI&amp;ec=45732303';" />
+        <small>Source: id.pinterest.com</small>
+        <p>Play backyard baseball online or download gba game in usa english version only at romsdownload.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Our Home" src="https://i.pinimg.com/originals/8b/32/b4/8b32b49c201fd1c190dba496e6ab502d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLn1pp8E6kuD08AXn-gJ8O9KIiUD1KUwubZhdmwUmtqPTwPsjdEQYtuUru1jsKAX_xrjrtHcH7ZiDdAw9DtBTa4WuzsVAqRI4&amp;ec=45732303';" />
+        <small>Source: id.pinterest.com</small>
+        <p>For more emulators check out our extensive emulators section.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/150x150/0e/9c/7b/0e9c7bba221b692df7630c5ab6ee9a67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRq79GKKaJKOV74Xnb-hESiBzR_F7JRdJr31_dAHHGnOPEPohVWmVPHhngOs4ui7u_ZkWBgIDjPh_QZHpycKM5HCrrhbegQPY&amp;ec=45732303';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Backyard baseball game for gameboy advance works on computers and mobile devices with an emulator.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Zahraj Si Baseball Baseball Games Best Baseball Games Backyard Baseball" src="https://i.pinimg.com/originals/ab/d0/a9/abd0a9b1798722846d3fb93f37914ca1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVr4NCX9y__GFxuDBCCJEr0D0rcRmr034OLxcdoa11ZtYfoVXYFA17f2PFBp-CIWdpncAxWjlzOtiOQbfOqvBrqFOPD_76nuE&amp;ec=45732303';" />
+        <small>Source: fi.pinterest.com</small>
+        <p>For more emulators check out our extensive emulators section.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cizgi Film Futbolu Toon Kupasi Cartoon Network Cizgi Film Kahramanlari Cartoon Network Cizgi Film Elisi Fikirleri" src="https://i.pinimg.com/originals/72/b8/bb/72b8bb689cb208073da010bbf173655a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Dopala1CGAz7DtJwES8DaiDYpTzcc3bJ_UO5az3cbFBkyKV-d3nVrbd8QDgL-nx1u8X3YJ7fO07kyv2CVgcG73HkC7Utyak&amp;ec=45732303';" />
+        <small>Source: tr.pinterest.com</small>
+        <p>Upvoted by 123 players.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/small-backyard-waterfalls.html"><i>&larr; small backyard waterfalls</i></a>
+                                                                    
+                                        <a href="/small-backyard-wedding-ideas-on-a-budget.html"><i>small backyard wedding ideas on a budget &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

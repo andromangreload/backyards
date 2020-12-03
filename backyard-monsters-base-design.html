@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Backyard Monsters Base Design
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Backyard Monsters Base Design",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=542389539119887&quot;,&quot;https://static.planetminecraft.com/files/resource_media/screenshot/1427/2014-07-07_0828177724253.jpg&quot;,&quot;http://3.bp.blogspot.com/-d3aCkpKzSBE/TcnuSlGM0SI/AAAAAAAAAJM/BD4JHCi-Vqc/s1600/bymyard.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyards Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=backyard monsters base design",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Backyard Monsters Base Design
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Backyard Monsters Base Design</strong>. Facebook backyard monsters game guides contents. There are many different types of yards seen in backyard monsters the most common of which is the box yard.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://media.pocketgamer.biz/2013/6/6071/ios-kixeye-backyard-monsters-unleashed-r471x.jpg" alt="With Backyard Monsters Now Soft Launched Kixeye Prepares To Go Big On Mobile Pocket Gamer Biz Pgbiz" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwqAwlAVYFCceVeBwJikH6l4wtWY2lLOjajA';">
+        <figcaption>With Backyard Monsters Now Soft Launched Kixeye Prepares To Go Big On Mobile Pocket Gamer Biz Pgbiz from www.pocketgamer.biz</figcaption>
+    </figure>
+        <p>
+        Backyard monsters building good bases guide by dr hax. Bank can you collect quest rewards when your bank is full. Go to stomp the yard in backyard monsters forums to get your base rated name image description anti ppx demon hawk base.
+    </p>
+    <h3>Diamond design by nicholas leung.</h3>
+    <p>From the backyard monsters forum. Facebook backyard monsters game guides contents. Now i m not saying you ll make a perfect base or bad one btw there are 7 main things that make a good yard. Credit to lara leslie.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="46 Backyard Monsters Inferno Outdoorhom" src="https://3.bp.blogspot.com/-ablIgnRvjVc/TktPE_k0cEI/AAAAAAAAAm4/mXwUYjZmRDc/s1600/base4z.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5UJYbh3BoXBxGlOoRAHYTY9YRuFntVDcNvw';" />
+        <small>Source: outdoorhom.blogspot.com</small>
+        <p>The design forces.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="No Excuses For Boredom This Summer Thanks To Some Summer Staycation Tips From Bird S Party To Celeb Backyard Camping Backyard Camping Parties Summer Backyard" src="https://i.pinimg.com/originals/ad/cd/4b/adcd4ba1dc5b8d8e57fb0ff38b4dbf99.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4XbEtpaFubMsOLI-9FCHnIiDOTinLGOXUw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Spread designs could be a really strong base when made well.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Idea Base Designs Backyard Monsters Wiki Fandom Powered By Wikia" src="https://vignette3.wikia.nocookie.net/backyardmonsters/images/8/8d/Quintal_dos_Monstros_do_Mateus.PNG/revision/latest?cb=20111227134548" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpPyLxZnFtnYq-JYDZG4NruwaX0jkeJArcg';" />
+        <small>Source: backyard-idea.blogspot.com</small>
+        <p>Since the updates there have not been many guides to making a good base i m going to teach you some pro s in making good base now this is going to be long so relax.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Artstation Backyard Monster Designs Jonathan Bolster" src="https://cdna.artstation.com/p/assets/images/images/006/520/660/20170704223606/micro_square/jonathan-bolster-kixeyebuildings-0000-building-reaver-dredgingplatform-final.jpg?1499225766" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8hDDHN-YnbNc7gNmlYISIOzo78J-Mc8ZnxA';" />
+        <small>Source: www.artstation.com</small>
+        <p>Go to stomp the yard in backyard monsters forums to get your base rated name image description anti ppx demon hawk base.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Timeless Pieces Backyard Monsters Posts Facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=340669802658892" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTF_rXYvcjguh6y3316hrv3nTN1DvaWBGIw';" />
+        <small>Source: www.facebook.com</small>
+        <p>Backyard monsters best base defense designs and layouts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Ideas On A Budget Facebook Backyard Monsters Best Monster Bunker Base Designs" src="http://3.bp.blogspot.com/-d3aCkpKzSBE/TcnuSlGM0SI/AAAAAAAAAJM/BD4JHCi-Vqc/s1600/bymyard.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9i8WMjR8Pd8pfBoCtobombzB0USNg0l8psg';" />
+        <small>Source: backyardideasonabudget.blogspot.com</small>
+        <p>Credit to lara leslie.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Monsters Posts Facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=580874718604702" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzR5xJxdAIYexOShxzfJ9nm39Tod6GsnfwA';" />
+        <small>Source: www.facebook.com</small>
+        <p>Spread designs could be a really strong base when made well.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Monsters Photos Facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=542389539119887" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmi_z5JunJrxG-YAsC3s9AxZnBbLRyDGLIvA';" />
+        <small>Source: www.facebook.com</small>
+        <p>Now i m not saying you ll make a perfect base or bad one btw there are 7 main things that make a good yard.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="My Backyard Monsters Base Town Hall Lvl 9 Backyardmonsters" src="https://external-preview.redd.it/rWULx1e7JhNUUIPvuIIIyyTSz1rXO9UaPaHEUbbJdI8.jpg?auto=webp&amp;s=c0238ceb52c6f11b8d0eea6b7337c45c997da0ea" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUF-TqFVCWzoXcl5x1bL1THf7YCm3sMwhgw';" />
+        <small>Source: www.reddit.com</small>
+        <p>The design forces.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/backyard-compost-bins.html"><i>&larr; backyard compost bins</i></a>
+                                                                    
+                                        <a href="/backyard-deck-plans.html"><i>backyard deck plans &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

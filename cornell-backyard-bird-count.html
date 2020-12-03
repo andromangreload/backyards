@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cornell Backyard Bird Count
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Cornell Backyard Bird Count",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/30/e7/f5/30e7f5db2cbfe0da7b6d62a726d198c5.png&quot;,&quot;https://i.pinimg.com/originals/81/f2/97/81f297f7127b11885ff0af81dd39269c.jpg&quot;,&quot;https://i.pinimg.com/originals/6f/21/47/6f2147f9b99b8fc0a7bf077c51a67b75.png&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyards Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cornell backyard bird count",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cornell Backyard Bird Count
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cornell Backyard Bird Count</strong>. The 2020 gbbc goes from february 14 17. Participate from anywhere in the world.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/67/9d/09/679d092e86ddf8b69706256018277ac4.jpg" alt="Spotted Towhee Great Backyard Bird Count Birds Backyard Birds" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-biT7wTsbeRfbNvdMXLmxQYAmjgmCaHZOg0trHvlPbPyfWv-BzWVDX9KNxNpA3hovE9K4-e40CI-tieUaCQCZQyW-gA-ZWQ&amp;ec=45732304';">
+        <figcaption>Spotted Towhee Great Backyard Bird Count Birds Backyard Birds from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        A 4 day count held over a long weekend in february. Simply count the birds. Wild birds unlimited sponsored projects great backyard bird count.
+    </p>
+    <h3>Simply count the birds.</h3>
+    <p>In service to the natural world we work with communities around the globe to inspire and inform conservation. Are you ready to count some birds. Given this staggering decline in north america s avian population there is no better time than now to help scientists track bird populations by taking part in the 23rd annual great backyard bird count gbbc feb. We would like to show you a description here but the site won t allow us.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Print Your Own Participation Certificate For Your Hard Work During The Great Backyard Bird Count This Year Great Backyard Bird Count Backyard Birds Gbbc" src="https://i.pinimg.com/originals/69/12/90/6912907a7b9795310155118f36cf8415.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9oIOe30DF-Bkro-N1rWlFgGICYDeK9E8tmB4JEw85-m28rIc2MdWCz_mP8DY-iCnr9TXryhKNgz0V5aPTtbLmySNNlRr2SA&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>In service to the natural world we work with communities around the globe to inspire and inform conservation.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The 16th Annual Great Backyard Bird Count Great Backyard Bird Count Bird Bird Supplies" src="https://i.pinimg.com/originals/81/f2/97/81f297f7127b11885ff0af81dd39269c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCAxqN1TeU1PgqTlUMdixdnfZZqVnHyd1Hf20lrs3bbrVmrjMwMnSrI9-QiR1A2lfCbWpkmSH27kk7O2M1QJxEx7P1V7_ywvM&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Count the numbers of birds and the species variety.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fox Sparrow Big Scratches Around On The Ground Darker Here In Victoria Big Messy Spot On Its Chest Great Backyard Bird Count Backyard Birds Bird Species" src="https://i.pinimg.com/originals/2e/4a/51/2e4a510d8ed0e6528bac62a2b79efdd6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEC3je-01-7l3IaLIYgA_P7G0l-d39I5Fw14Nz_GxJD2YXHtZBZy_8NsDmEwLyWmP06m8y2BovBEPzW5oYcoQJUICvwjTxQ1Y&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Sections of this page.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Great Backyard Bird Count Annual Citizen Science Project Of The Cornell University Laboratory Of Great Backyard Bird Count Backyard Birds Citizen Science" src="https://i.pinimg.com/originals/92/0c/35/920c35e24b41b312994e8b001ef49468.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSep4apS2EDe0jYRDom6IDeBbHvNADO-dD7d6xtbZL2Ucv37CZTzFWeO1TzJd3erd_gy7U05zZ24pViCt6u7aFB99C-1z2FhD8&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Will you be counting birds for the great backyard bird count starting tomorrow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Spotted Towhee Great Backyard Bird Count Birds Backyard Birds" src="https://i.pinimg.com/originals/67/9d/09/679d092e86ddf8b69706256018277ac4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-biT7wTsbeRfbNvdMXLmxQYAmjgmCaHZOg0trHvlPbPyfWv-BzWVDX9KNxNpA3hovE9K4-e40CI-tieUaCQCZQyW-gA-ZWQ&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Given this staggering decline in north america s avian population there is no better time than now to help scientists track bird populations by taking part in the 23rd annual great backyard bird count gbbc feb.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Photos And Videos For Wilson S Warbler All About Birds Cornell Lab Of Ornithology In 2020 Ornithology Great Backyard Bird Count Backyard Birds" src="https://i.pinimg.com/originals/be/20/64/be20647fae1746148a854572727c692d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrEk2fVbnj1Kag9qxrxHRP9fz_9flvbBG5WSNuBM6kBDVe4LSso3m8UkpLDJSqELCMOmBJqedtGfusMYyLS6hO6SMCSAXNBM&amp;ec=45732304';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Great backyard bird count.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Field Sparrow Great Backyard Bird Count Bird Life List Animal Companions" src="https://i.pinimg.com/564x/63/9f/7d/639f7da246b352e2f7d363055f764bb0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf7H7pjBXRKM_tkNSrlAyYVTPYCd1QJyu9jNyrL3dm7yPdOYGRssK29PNNkFJwBvicpfJ1Al62HGTNHfFb8pY-2lb_M0cbm2Y&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Pages community organization environmental conservation organization cornell lab of ornithology videos the great backyard bird count.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Great Backyard Bird Count Feb 14 17 In 2020 Great Backyard Bird Count Backyard Birds Birds" src="https://i.pinimg.com/originals/48/1d/1d/481d1d9ecea70939c0c4d1c9dece5bd6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjCYrMrMwNOHwpHvxMchfq6GJ7EsBsyLo1LjlevMHD8E5FjUpm5I8keRtq3Bjps5sYwxCLo0bTkFjE_IKTQQ7DZQ4NcaboNus&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Your cornell lab account lets you access any of these projects.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By K Kipper On Ornithology In 2020 Ornithology Citizen Science Great Backyard Bird Count" src="https://i.pinimg.com/originals/20/76/85/207685b38ce655fae29379725942310f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijjEscSFMYwoaqYEctLqbdxssl19DaoDcPXO0GgZEwOtI8P-JNf1Y4icufucn62nmAlTrHS6Lbn6qIpg7SLVVgXExPoVfpZs&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The great backyard bird count gbbc is a citizen science project run by the cornell lab of ornithology and national audubon society.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/backyard-with-fire-pit-landscaping-ideas.html"><i>&larr; backyard with fire pit landscaping ideas</i></a>
+                                                                    
+                                        <a href="/backyard-wedding-themes.html"><i>backyard wedding themes &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

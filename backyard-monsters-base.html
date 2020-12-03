@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Backyard Monsters Base
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Backyard Monsters Base",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/5e/71/fb/5e71fb787199f807bcca428824c0cafa.jpg&quot;,&quot;https://i.pinimg.com/originals/e4/83/62/e48362fa92341bd6c95d1b552da2e86d.jpg&quot;,&quot;https://i.pinimg.com/originals/ad/cd/4b/adcd4ba1dc5b8d8e57fb0ff38b4dbf99.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyards Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=backyard monsters base",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Backyard Monsters Base
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Backyard Monsters Base</strong>. The walls are made so that monsters that try to attack through them will instead. If you want to help but you re not sure where to start try.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/8c/56/2e/8c562efa669fd988642cb5ad91b64020.jpg" alt="Transform Straw Bales Into Scary Cool Outdoor Halloween Monsters Frankenstein S Monster A Spid Halloween Pumpkins Carvings Halloween Straws Halloween Outside" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ1z4b7NdEFlTkc5qYtj_tAY-fOo2o9txqtQ';">
+        <figcaption>Transform Straw Bales Into Scary Cool Outdoor Halloween Monsters Frankenstein S Monster A Spid Halloween Pumpkins Carvings Halloween Straws Halloween Outside from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        The box yard is th most common type of yard especially at lower levels but it is also one of the worst. If you are new to this wiki please read the community guidelines. Backyard monsters is a game created by kixeye with david scott as its co founder where players create and manage a base filled with monsters in their backyard.
+    </p>
+    <h3>Go to stomp the yard in backyard monsters forums to get your base rated name image description anti ppx demon hawk base.</h3>
+    <p>Backyard monsters showing d a v e. Once you have there will be several earthquakes that will happen within your base and as these happen you will be attacked by wild monster invasion 2 monsters. These walls are usually 4 blocks thick and are usually upgraded for maximum effectiveness. Stronger versions of this design will use eye ra bait to keep eye ra from destroying the thick walls.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Large Indoor Putting And Chipping Greens Indoor Putting Green Backyard Putting Green Putting Greens" src="https://i.pinimg.com/originals/fb/54/6d/fb546dca8c4b0511a1ed1da3fc0a94d2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rwYYbCzTcaWok5TXcFR7QTobLmY1eaqYXw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The base will be obtainable once you upgrade your town hall to level 5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="My Two Year Old Son Is Into Pirates So For His Birthday I Built Him A Cannon Complete With An Android App To Simulate Lighting The Fuse And Firing The Cannonba" src="https://i.pinimg.com/originals/49/70/a2/4970a2f667f11a835894f195ef227eaa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-DImy95fSdlaIRv39rOUL8kpbjGfjYaLLIQ';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Monsters are units produced in the hatchery using goo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Transform Straw Bales Into Scary Cool Outdoor Halloween Monsters Frankenstein S Monster A Spid Halloween Pumpkins Carvings Halloween Straws Halloween Outside" src="https://i.pinimg.com/474x/8c/56/2e/8c562efa669fd988642cb5ad91b64020.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ1z4b7NdEFlTkc5qYtj_tAY-fOo2o9txqtQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The sandwich base design utilizes two thick walls of blocks that are parallel to each other to protect the town hall.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sportsideo Sports Community Red Sox Nation Baseball Photography Baseball History" src="https://i.pinimg.com/originals/1a/96/8a/1a968a363f6ad1b40e53f7de0dc04a0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo81yuZJTz9y2gjLWroc2-3RLURwLmaNMLlw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The sandwich base design utilizes two thick walls of blocks that are parallel to each other to protect the town hall.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Creaciones De Lego" src="https://i.pinimg.com/originals/5e/71/fb/5e71fb787199f807bcca428824c0cafa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mbbzFbcNASv0GkaFZkzBJYzU7c6xmF_8aw';" />
+        <small>Source: ar.pinterest.com</small>
+        <p>Once they are hatched they will be stored in the housings until you juice them using the monster juicer command them to defend using the monster bunkers and or deploy them using the flinger.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Keeping A Field Of Dreams Green Water Well Journal Field Of Dreams Wiffle Ball Major League Baseball Stadiums" src="https://i.pinimg.com/736x/3b/6e/81/3b6e817ded79b2061fe4726d969faf1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtrqIIZs7UyfibU1gZYFQ2LL5aB-xpWMosA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>You need to unlock other monsters using the monster locker for you to.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ark Building Tips Tricks No Mods How To Intersect Roofs Youtube Roofingtipstricks Ark Survival Evolved Bases Roof Roofing" src="https://i.pinimg.com/564x/97/78/b6/9778b6f18ea1649d41051ee395c5c94b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKC3nfxGMPgPyYcqLWZFo_pwO61G7biVNhEw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Backyard monsters is a strategy game created by kixeye with david scott as its co founder where players create and manage a base filled with monsters in their backyard.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backyard Monsters Backyard Monsters Is A Wonderful Strategy Video Game It Lets You To Manage And Also Create A New Mons Backyard Monsters Backyard Space Games" src="https://i.pinimg.com/originals/5d/ad/99/5dad9963358e2ec89ee736882b0ad5df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRraIg8DcaN_Tt_5ytt2GNNb7u-OGJoVItBSQ';" />
+        <small>Source: in.pinterest.com</small>
+        <p>This backyard is part of a larger world where many other players attack defend and build all trying to create the greatest backyard empire.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diy Ring Toss Game Diy Yard Games Backyard For Kids Backyard Games" src="https://i.pinimg.com/originals/e4/83/62/e48362fa92341bd6c95d1b552da2e86d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo55WTkdGSA7aZQ7v6i5LHyjF4rQmeeT56Bw';" />
+        <small>Source: br.pinterest.com</small>
+        <p>Backyard monsters is a strategy game created by kixeye with david scott as its co founder where players create and manage a base filled with monsters in their backyard.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/prefab-backyard-cottage.html"><i>&larr; prefab backyard cottage</i></a>
+                                                                    
+                                        <a href="/pools-for-backyards.html"><i>pools for backyards &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

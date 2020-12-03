@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Backyard Camera
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Backyard Camera",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/31/57/28/31572851b4f25ff180faae2ee799abb0.jpg&quot;,&quot;https://i.pinimg.com/originals/88/4a/d3/884ad35351ec97e3ecfc3d9348ffd717.jpg&quot;,&quot;https://i.pinimg.com/originals/6e/d3/fe/6ed3fe1f29fe21e11803d3381c2cd26a.png&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyards Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=backyard camera",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Backyard Camera
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Backyard Camera</strong>. We ve tested a range of other models at different prices to help you find the perfect camera. The 500 arlo pro 3 two camera pack plus hub is an excellent security camera.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a4/40/eb/a440eb6cdc439def141402e0e32198d5.jpg" alt="My Current Backyard Additional View With Camera Happy English Mastiff Pinmydreambackyard Dream Backyard Backyard Outdoor Fun" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RPRb_CnoXVVjoKen0Xxkn81c5esUtLVrv8YwktJvmWQ31gREK1If8Dby8WwWd8IfSRdmz60I6oOCjDIpCQ1hK9Lf7hfloco&amp;ec=45732301';">
+        <figcaption>My Current Backyard Additional View With Camera Happy English Mastiff Pinmydreambackyard Dream Backyard Backyard Outdoor Fun from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        The tp link kasa cam outdoor is a reasonably priced outdoor security camera that offers crisp video free cloud storage and support for multiple voice platforms. It s expensive but it s packed with features including color night vision motion. First of all the wyze cam outdoor covers all the basics with an outdoor camera featuring 1080p recording night vision two way audio and a handy time lapse mode.
+    </p>
+    <h3>Arlo pro 3 pricey but feature packed with 2k video quality colour night vision and ip65 weather resistance.</h3>
+    <p>It has 2 560x2 560 pixel streaming color night vision 12x zoom a built in siren and a built in spotlight. We ve tested a range of other models at different prices to help you find the perfect camera. Reolink camera outdoor indoor ip security video surveillance is a cost effective home security camera that redefines home surveillance to a whole new level. The 500 arlo pro 3 two camera pack plus hub is an excellent security camera.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Nyxcam 1080p Dome Security Camera 2 1mp Hd 4 In 1 Tvi Ahd Cvi Analog Cctv Tropical Backyard Landscaping Backyard Landscaping Designs Garden In The Woods" src="https://i.pinimg.com/originals/b6/03/ab/b603ab0e66ea189fe6054dbc60388501.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHfTsWjsHfnrwBHl3X241mDeVST2KLEy6vsEpySho9aXFxPOIOTrsSpC7zJrJdLGH4mfK1tiE1J9ekur2mOyhtFBc2IdKV6kQ&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>We ve tested a range of other models at different prices to help you find the perfect camera.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Soliom Bird S60 Outdoor Wireless Solar Home Security Camera Security Cameras For Home Wireless Home Security Systems Solar Camera" src="https://i.pinimg.com/originals/3e/d6/a6/3ed6a65b6f9c51939619d1484b6fa5d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sNn5cxdcceWsNC5lOi7wb4hba4YE0ZVVlec-3s6syxFq6Q1v-5-zlUC8GSde24iR4dMtEjIuAy41kh6nzWPQxRnmsJ48aIg&amp;ec=45732301';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Nest cam iq outdoor nest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="From My Backyard Finally Gotcha But I Look Totally Different Through This Camera Lens Backyard Camera Lens Field" src="https://i.pinimg.com/originals/bf/f6/30/bff6309fef281ad9e8a83d4c0d9b251c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnXypChf8wqOoZrlN441sQEUqZo0WOrIPN_XsgC-mhl-0OqkRomE16-bdlXtoRO3k6jnhDSjwqEymCcOqL7hrlve0t0HzbQM4&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The arlo ultra is the first outdoor security camera we ve seen that streams and records video in stunning 4k.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diy Bird House Cover For Security Camera In 2020 Bird House Home Security Wireless Home Security Systems" src="https://i.pinimg.com/originals/18/14/dc/1814dc3737a3b2be2421a8396b5e9ff3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xOQDwAU0ktr1-J4eIc_T3QZROnztEvu2ELKA_IGWaT_p2D5Z9Su1v9iggEf2Wf8OzvJLSm-86u1p8EKdcUtAXkEljIcFoc8&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The nest cam iq outdoor features 130 degree 4k video advanced tracking technology an impressive night mode and an ai powered zoom mode that lets you magically enhance tiny details in an image.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ring Spotlight Vs Floodlight What Are The Differences In 2020 Security Cameras For Home Backyard Lighting Outdoor Camera" src="https://i.pinimg.com/originals/5f/9e/46/5f9e4682a7b3c0c4146ca1f56c836aba.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6H_bp_GOyh3OWppa_w9_I22bOe_3z1MyLtsbwdlJEBbb-4KxWu3x_Nz-2Ab6Kot2VOrFUUq5GkftDHsCOSdtjEJV94zJufUQ&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Wyze cam outdoor mount upgraded weatherproof wall mount for wyze cam 1080p hd camera weather proof 360 degree protective adjustable blink mounting bracket white 3 pack new waterproof protection.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wingscapes Birdcam Pro Motion Actvated Digital Wildlife Camera Backyard Bird And Wildlife Camera At Fiddle Creek Farms Bird Houses Bird House Backyard Birds" src="https://i.pinimg.com/originals/aa/f3/9b/aaf39b081d372e39b2e481854c6753dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaAZvxYpbWlN-u-MwqWsBTVli53tCEKfhgKyGJbOBieckP36WVprLdt69LtQzT8Bt72KyIWb7SRm3A0-4WxP4iSxSWTqLvlI&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The tp link kasa cam outdoor is a reasonably priced outdoor security camera that offers crisp video free cloud storage and support for multiple voice platforms.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="My Current Backyard Additional View With Camera Happy English Mastiff Pinmydreambackyard Dream Backyard Backyard Outdoor Fun" src="https://i.pinimg.com/originals/a4/40/eb/a440eb6cdc439def141402e0e32198d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RPRb_CnoXVVjoKen0Xxkn81c5esUtLVrv8YwktJvmWQ31gREK1If8Dby8WwWd8IfSRdmz60I6oOCjDIpCQ1hK9Lf7hfloco&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Integrated safety helmet design seamless three sided package no remain water at the bottom no leakage at the top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Install Wireless Bird Box Camera With Mobile Phone Green Backyard Bird Box Camera Bird Boxes Green Backyard" src="https://i.pinimg.com/originals/cc/46/ef/cc46efe96de28eb7e78d4a6f8cb7285b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58aa71jAjJUiLEQfh_ch1UAs-4RERhEWtStte5qHwpG-mB-RIaVArRiFpALiql-g4wu2VeTPfRhdlPkvpPvvMOKv8GQPtNRM&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>We ve tested a range of other models at different prices to help you find the perfect camera.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Olympus Digital Camera Backyard Patio Backyard Privacy Pergola" src="https://i.pinimg.com/originals/88/4a/d3/884ad35351ec97e3ecfc3d9348ffd717.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5EPNG2x9APrQJINohyolICgupYgUET_aNHW07LJ6_vaPahggSXpIo0PnJ52kqc1FzlUlW4mWRk80x1iszNi9WN8birgg5tPw&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Calling all smart home nerds and security freaks.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/backyard-ideas-with-fire-pits.html"><i>&larr; backyard ideas with fire pits</i></a>
+                                                                    
+                                        <a href="/backyard-kid-games.html"><i>backyard kid games &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
